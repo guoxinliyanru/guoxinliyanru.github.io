@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小米商城</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		<div style="background-color: #333;height: 40px;">
+			<div class="daohang" align="center">
+				<div class="dh_text">
+					<ul>
+						<li><a href="#">小米商城</a></li><span>|</span>
+						<li><a href="#">MIUI</a></li><span>|</span>
+						<li><a href="#">loT</a></li><span>|</span>
+						<li><a href="#">云服务</a></li><span>|</span>
+						<li><a href="#">天星科数</a></li><span>|</span>
+						<li><a href="#">有品</a></li><span>|</span>
+						<li><a href="#">小爱开放平台</a></li><span>|</span>
+						<li><a href="#">企业团购</a></li><span>|</span>
+						<li><a href="#">资质证照</a></li><span>|</span>
+						<li><a href="#">协议规则</a></li><span>|</span>
+						<li id="xz_app" onmouseover="xz_app_f()" onmouseout="xz_app_f2()">
+							<a href="#">
+								下载app
+								<span id="xz_app_content" onmouseover="xz_app_f()" onmouseout="xz_app_f2()">
+									<img src="img/xmsc3.png" />
+									小米商城APP
+								</span>
+							</a>
+						</li><span>|</span>
+						<li><a href="#">智能生活</a></li><span>|</span>
+						<li><a href="#">Select Location</a></li>
+						
+						<div style="width: 150px;height: 40px;float: left;"></div>
+						
+						<li><a href="#">登录</a></li><span>|</span>
+						<li><a href="#">注册</a></li><span>|</span>
+						<li><a href="#">消息通知</a></li>
+						<a onmouseover="gwc_img(this)" onmouseout="gwc_img2(this)" href="#" class="gh_text_gwc">
+							<img src="img/car1.png" style="float: left;" />
+							<span>购物车</span>
+							<span id="gwc_sum">(0)</span>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style=" background-color: #fff;height: 683px;">
+			<div class="tuijian">
+				<div class="tj_top">
+					<div style="height: 52; width: 55px;float: left;padding: 20px 0;margin-right: 180px;">
+						<a href="#" style="display: block;">
+							<img src="img/logo-mi2.png" style="width: 100%;float: left;" />
+						</a>
+					</div>
+					<div class="tj_daohang">
+						<ul>
+							<a href="#" ><li><span>小米手机</span></li></a>
+							<a href="#" ><li><span>Redmi 红米</span></li></a>
+							<a href="#" ><li><span>电视</span></li></a>
+							<a href="#" ><li><span>笔记本</span></li></a>
+							<a href="#" ><li><span>家电</span></li></a>
+							<a href="#" ><li><span>路由器</span></li></a>
+							<a href="#" ><li><span>智能硬件</span></li></a>
+							<a href="#"><li><span>服务</span></li></a>
+							<a href="#"><li><span>社区</span></li></a>
+						</ul>
+					</div>
+					<div class="tj_sousuo">
+						<div class="tj_sosuo_disp" onmouseover="sosuo_but2()" style="width: 300px; height: 58px;top: -5px;left: -10px ;position: fixed ;z-index: -1;">
+						
+						</div>
+						<div class="tj_sosuo_div1" onclick="sosuo_tabl(this)" onmouseover="sosuo_tabl2(this)" onmouseout="sosuo_tabl3(this)">
+							<div class="tj_sousuo_td1" onclick="inpbor(this)"><input tyle="text" /></div>
+							<div class="tj_sousuo_td2" ><input onmouseover="sosuo_but()" type="button" value="🔍"></div>
+						</div>
+						<div class="tj_sj" onmouseenter="sosuo_tabl4(this)" onmouseleave="sosuo_tabl5(this)">
+							<ul>
+								<a href="#"><li>全部商品</li></a>
+								<a href="#"><li>小米11</li></a>
+								<a href="#"><li>小米手机</li></a>
+								<a href="#"><li>耳机</li></a>
+								<a href="#"><li>净水器</li></a>
+								<a href="#"><li>洗衣机</li></a>
+								<a href="#"><li>空调</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="tj_centent">
+					<div id="tj_cent_bg">
+						<ul>
+							<li style="display: block;"><a href="#"><img src="img/tj_centent_body1.jpg"/></a></li>
+							<li><a href="#"><img src="img/tj_centent_body2.webp"/></a></li>
+							<li><a href="#"><img src="img/tj_centent_body3.webp"/></a></li>
+							<li><a href="#"><img src="img/tj_centent_body4.webp"/></a></li>
+						</ul>
+						<div class="bg_xuanze">
+							<ul>
+								<!-- style="background-color: transparent;" -->
+								<li style="background-color: transparent;"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tj_xuanxiang">
+							<ul>
+								<a href="#"><li>手机&nbsp;电话卡 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>电视&nbsp;盒子 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>笔记本&nbsp;显示器 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>家电&nbsp;插线板 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>出行&nbsp;穿戴 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>智能&nbsp;路由器 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>电源&nbsp;配件 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>健康&nbsp;儿童 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>耳机&nbsp;音箱 <span><img src="img/gt.gif"></span></li></a>
+								<a href="#"><li>生活&nbsp;箱包 <span><img src="img/gt.gif"></span></li></a>
+							</ul>
+						</div>
+						<div class="xuanxiang_body">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_22.webp" />黑鲨4 Pro</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_22.webp" />黑鲨4 Pro</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_22.webp" />黑鲨4 Pro</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_13.jpg" />小米盒子</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_13.jpg" />小米盒子</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_13.jpg" />小米盒子</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_22.webp" />黑鲨4 Pro</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_22.webp" />黑鲨4 Pro</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_13.webp" />Redmi K40</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_22.webp" />黑鲨4 Pro</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+									<td><a href="#"><img src="img/xx_1_24.png" />手机上门维修</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_11.webp" />小米MIX FOLD</a></td>
+									<td><a href="#"><img src="img/xx_1_12.webp" />小米10</a></td>
+									<td><a href="#"><img src="img/xx_1_14.webp" />Redmi Note 8 Pro</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_1_21.webp" />小米11 Ultra</a></td>
+									<td><a href="#"><img src="img/xx_1_23.webp" />Redmi K30 至尊纪念版</a></td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_12.webp" />Redmi 智能电视 X系列</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+									<td><a href="#"><img src="img/xx_2_24.webp" />Redmi 智能电视 98</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_21.webp" />小米透明电视</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_11.webp" />Redmi MAX 86 超大屏</a></td>
+									<td><a href="#"><img src="img/xx_2_14.webp" />电视音箱</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/xx_2_22.webp" />小米电视大师 82英寸</a></td>
+									<td><a href="#"><img src="img/xx_2_23.webp" />电视大师 65英寸 OLED</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="tj_bottom">
+					<div class="tj_bt_qita">
+						<ul>
+							<li class="bor_b"><a href="#">
+								<img src="img/qita_1.png" width="35px" height="35px">
+								小米秒杀
+							</a></li>
+							<li class="bor_l bor_r bor_b"><a href="#">
+								<img src="img/qita_2.png" width="35px" height="35px">
+								企业团购
+							</a></li>
+							<li class="bor_b"><a href="#">
+								<img src="img/qita_3.png" width="35px" height="35px">
+								F码通道
+							</a></li>
+							<li><a href="#">
+								<img src="img/qita_4.png" width="35px" height="35px">
+								米粉卡
+							</a></li>
+							<li class="bor_l bor_r"><a href="#">
+								<img src="img/qita_5.png" width="35px" height="35px">
+								以旧换新
+							</a></li>
+							<li><a href="#">
+								<img src="img/qita_6.png" width="35px" height="35px">
+								话费充值
+							</a></li>
+						</ul>
+					</div>
+					<ul>
+						<li><img src="img/tj_mr1.jpg" /></li>
+						<li><img src="img/tj_mr2.jpg" /></li>
+						<li><img src="img/tj_mr3.jpg" /></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tj_top_nr">
+				<ul>
+					<li><a href="#">
+						<img src="img/nr01.webp"/>
+						小米MIX FOLD<br />
+						<span>9999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr02.webp"/>
+						小米11 Ultra<br />
+						<span>5999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr03.webp"/>
+						小米11 Pro<br />
+						<span>4999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr04.webp"/>
+						小米11 青春版<br />
+						<span>2299元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr05.webp"/>
+						小米10S<br />
+						<span>9999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr06.webp"/>
+						小米11<br />
+						<span>3999元起</span>
+					</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">
+						<img src="img/nr11.webp"/>
+						K40 Pro 系列<br />
+						<span>2799元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr12.webp"/>
+						Redmi K40<br />
+						<span>1999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr13.webp"/>
+						Redmi Note 9 系列<br />
+						<span>999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr14.webp"/>
+						Redmi K30S至尊纪念版<br />
+						<span>2599元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr15.webp"/>
+						Redmi K30至尊纪念版<br />
+						<span>1999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr16.webp"/>
+						Redmi 9A<br />
+						<span>499元起</span>
+					</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">
+						<img src="img/nr21.webp"/>
+						Redmi MAX 86英寸 超大屏电视<br />
+						<span>9999元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr22.webp"/>
+						小米电视大师 82英寸至尊纪念版<br />
+						<span>49999元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr23.webp"/>
+						小米电视大师 82英寸<br />
+						<span>12999元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr24.webp"/>
+						小米透明电视<br />
+						<span>49999元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr25.webp"/>
+						小米电视  大师 65英寸OLED<br />
+						<span>10999元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr26.webp"/>
+						Redmi 智能电视 MAX 98英寸<br />
+						<span>19999元</span>
+					</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">
+						<img src="img/nr31.webp"/>
+						小米笔记本Pro 15<br />
+						<span>6499元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr32.webp"/>
+						RedmiBook Pro 14<br />
+						<span>4699元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr33.webp"/>
+						RedmiBook Pro 15<br />
+						<span>4999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr34.webp"/>
+						Redmi G 游戏本<br />
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr35.webp"/>
+						RedmiBook 16<br />
+						<span>4999元起</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr36.webp"/>
+						RedmiBook Air 13<br />
+						<span>5199元起</span>
+					</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">
+						<img src="img/nr41.webp"/>
+						米家分冷对开门冰箱 483L<br />
+						<span>2399元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr42.webp"/>
+						米家扫托机器人 1T<br />
+						<span>1999元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr43.png"/>
+						米家互联网洗烘一体机<br />
+						<span>1899元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr44.webp"/>
+						小米净水器S1 800G<br />
+						<span>2499元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr45.webp"/>
+						米家空气净化器3  高效除菌<br />
+						<span>899元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr46.webp"/>
+						米家两门冰箱 160L<br />
+						<span>899元</span>
+					</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">
+						<img src="img/nr51.webp"/>
+						小米路由器AX6000<br />
+						<span>599元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr52.webp"/>
+						Redmi路由器 AX6<br />
+						<span>349元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr53.webp"/>
+						小米路由器AX9000<br />
+						<span>999元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr54.webp"/>
+						小米路由器AX1800<br />
+						<span>329元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr55.webp"/>
+						小米AloT路由器AX3600<br />
+						<span>499元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr56.webp"/>
+						Redmi路由器AC2100<br />
+						<span>169元</span>
+					</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">
+						<img src="img/nr61.webp"/>
+						小米全自动智能门锁<br />
+						<span>1799元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr62.webp"/>
+						Redmi小爱触屏音箱Pro8<br />
+						<span>499元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr63.jpg"/>
+						小米小爱触屏音箱<br />
+						<span>219元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr64.webp"/>
+						Redmi小爱音箱 Play<br />
+						<span>329元</span>
+					</a></li>
+					<span></span>
+					<li><a href="#">
+						<img src="img/nr65.webp"/>
+						查看全部<br />
+						<span style="none">智能硬件</span>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div style="background-color: #f5f5f5;margin-top: 70px;">
+			<!-- 缺少高度 -->
+			<div class="xm_miaosha">
+				<div class="xm_top">
+					<span>小米秒杀</span>
+					<div style="width: 71px; height: 24px;float: right;">
+						<span class="xm_top_span" style="border-right: 0;">&lt;</span>
+						<span class="xm_top_span">&gt;</span>
+					</div>
+				</div>
+				<div class="xm_center">
+					<div class="xm_center_left">
+						<span style="color: #ef3a3b; font-size: 21px;"></span>
+						<span style="margin: 25px 0;">
+							<img src="img/miaosha_sd.gif" />
+						</span>
+						<span style="font-size: 15px; color: rgba(0,0,0,.54);margin-bottom: 30px;">距离结束还有</span>
+						<ul id="xm_center_left_sj">
+							<li></li>
+							<span>:</span>
+							<li></li>
+							<span>:</span>
+							<li></li>
+							
+						</ul>
+					</div>
+					<div class="xm_center_right">
+						<div>
+							<ul>
+								<a href="#"><li>
+									
+								</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
